@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			img {
+				width: 30vw;
+				/*height: 400px;*/
+				position: absolute;
+				top: 100px;
+				left: 50px;
+				transition: all 1s;
+				transform-origin: 100% 100%;
+			}
+			
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<img src="img/广东海报.jpg" />
+		<img src="img/云南海报.jpg" />
+		<img src="img/山东海报.jpg" />
+
+		<img src="img/四川海报.jpg" />
+		<img src="img/广西海报.jpg" />
+		<img src="img/新疆海报.jpg" />
+		<img src="img/江苏海报.jpg" />
+
+		</div>
+	</body>
+	<script type="text/javascript">
+		var imgs = document.getElementsByTagName("img");
+		var h = 0;
+		for (var i = 0; i < imgs.length; i++) {
+			imgs[i].index = i;
+			if (i >= imgs.length - 2) {
+				h += 3;
+				imgs[i].style.top = imgs[i].offsetTop + h + "px";
+			}
+
+			imgs[i].onmousedown = function(e) {
+
+				var event = e || window.event;
+				var x = event.clientX;
+				var y = event.clientY;
+				var _this = this;
+				var sb = this.index;
+				e.preventDefault();
+				document.onmousemove = function(e) {
+					var event1 = e || window.event;
+					var x1 = event1.clientX;
+					var y1 = event1.clientY;
+					var a = x1 - x;
+					var c = 1;
+					var d = c * a;
+					var f = 0;
+					if (-a > 30) {
+						for (var j = sb; j > sb - 3; j--) {
+							f += 3;
+							if (j < 0) {
+								break;
+							};
+							if (j == imgs.length - 2) {
+								continue;
+							}
+							imgs[j].style.top = imgs[j].offsetTop + f + "px";
+							//				             imgs[j+1].style.left=imgs[j+1].offsetLeft + (topY * -t*0.25) + "px";
+						}
+
+						_this.style.transform = "rotateZ(-25deg)";
+						_this.style.left = -(_this.offsetWidth + 40) + "px";
+
+					} else if (-a > 0 && -a < 30) {
+
+						_this.style.transform = "rotateZ(" + d + "deg)";
+					} else if (a > 0) {
+						_this.style.transform = "translateX(300px)";
+					}
+
+				}
+				document.onmouseup = function(e) {
+					document.onmousemove = null;
+
+				}
+			}
+		}
+	</script>
+
+</html>

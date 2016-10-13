@@ -1,0 +1,362 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.swiper-container {
+	width: 100vw;
+	height: 100vh;
+}
+#swiper1{
+	width: 100vw;
+	height: 100vh;
+	background-color: lightskyblue;
+}
+#leftimg {
+	position: absolute;
+	width: 40vw;
+	/*z-index: 1;*/
+	top: 18%;
+	left: 0;
+	animation-duration: 2s;
+     /*animation-delay: 2.5s;*/
+}
+
+#rightimg {
+	position: absolute;
+	width: 40vw;
+	/*z-index: 1;*/
+	top: 38%;
+	right: 0;
+	animation-duration: 2s;
+    /* animation-delay: 2.5s;*/
+}
+
+#logoimg {
+	position: absolute;
+	width: 40vw;
+	/*z-index: 11;*/
+	top: 30%;
+	left: 30%;
+	animation-duration: 2s;
+     animation-delay: 0.5s;
+}
+.p2,
+.bgimg,
+.p4,
+.p6,
+.p8,
+.p9 {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+.zi{
+	position: absolute;
+	width: 80vw;
+	height: 10vh;
+	top: 62%;
+	left: 10%;
+}
+#shipin {
+	position: absolute;
+	width: 100vw;
+	height: 40vh;
+	top: 20%;
+	left: 0;
+}
+
+.bgimg1 {
+	position: absolute;
+	width: 94vw;
+	height: 70vh;
+	top: 15%;
+	left: 3%;
+	/*z-index: 1;*/
+}
+
+#bgimg2 {
+	position: absolute;
+	width: 94vw;
+	height: 70vh;
+	top: 15%;
+	left: 3%;
+}
+
+#bgimg3 {
+	position: absolute;
+	width: 80vw;
+	height: 70vh;
+	top: 8%;
+	left: 10%;
+}
+
+
+/*2页*/
+
+.dian1 {
+	position: absolute;
+	top: 15%;
+	left: 32%;
+}
+
+.dian2 {
+	position: absolute;
+	bottom: 15%;
+	left: 32%;	
+}
+
+.dian3 {
+	position: absolute;
+	bottom: 15%;
+	left: 48%;	
+}
+
+.dian4 {
+	position: absolute;
+	top: 10%;
+	right: 32%;
+}
+
+.dian5 {
+	position: absolute;
+	top: 66.6%;
+	right: 32%;
+}
+
+.dian6 {
+	position: absolute;
+	bottom: 26%;
+	right: 32%;
+}
+
+.dian7 {
+	position: absolute;
+	bottom: 20%;
+	right: 32%;
+	}
+.dian8,.dian17{
+	position: absolute;
+	top: 10%;
+	left: 48%;
+}
+/*4*/
+.dian9{
+	position: absolute;
+	bottom: 4%;
+	left: 30%;
+}
+.dian10{
+	position: absolute;
+	bottom: 10%;
+	left: 30%;
+}
+.dian11{
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+}
+.dian12{
+	position: absolute;
+	bottom: 17%;
+	left: 50%;
+}
+.dian13{
+	position: absolute;
+	bottom: 17%;
+	right: 30%;
+}
+.dian14{
+	position: absolute;
+	bottom: 22%;
+	right: 30%;
+}
+.dian16{
+	position: absolute;
+	top: 70%;
+	right: 30%;
+}
+.dian15{
+	position: absolute;
+	top: 10%;
+	right: 30%;
+	
+}
+.dian1,
+.dian2,
+.dian3,
+.dian4,
+.dian5,
+.dian6,
+.dian7,
+.dian8,
+.dian9,
+.dian10,
+.dian11,
+.dian12,
+.dian13,
+.dian14,
+.dian15,
+.dian16,.dian17 {
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background-color: white;
+	z-index: 1;
+	box-shadow: 0 0 6px 2px white;
+	display: none;
+}
+
+.xian1 {
+	position: absolute;
+	top: 5%;
+	left: 0;
+	transform: rotateZ(29deg);
+	transform-origin: 0 0;
+}
+
+.xian2 {
+	position: absolute;
+	top: 15%;
+	left: 33%;
+}
+
+.xian3 {
+	position: absolute;
+	bottom: 15.5%;
+	left: 32%;
+}
+
+.xian4 {
+	position: absolute;
+	top: 85%;
+	left: 49%;
+	transform: rotateZ(180deg);
+}
+
+.xian5 {
+	position: absolute;
+	top: 75.5%;
+	left: 100%;
+	transform: rotateZ(202deg);
+	transform-origin: 0 0;
+}
+
+.xian6 {
+	position: absolute;
+	bottom: 33.4%;
+	right: 33%;
+	transform: rotateZ(180deg);
+}
+
+.xian7 {
+	position: absolute;
+	bottom: 20.8%;
+	right: 0;
+}
+
+.xian8 {
+	position: absolute;
+	bottom: 21%;
+	right: 33.2%;
+}
+.xian9,.xian18{
+	position: absolute;
+	top: 0;
+	left: 49%;
+}
+.xian10 {
+	position: absolute;
+	top: 75.5%;
+	left: 0;
+	transform: rotateZ(47deg);
+	transform-origin: 0 0;
+}
+.xian11 {
+	position: absolute;
+	bottom: 4%;
+	left: 31.3%;
+	
+}
+.xian12 {
+	position: absolute;
+	bottom: 10.8%;
+	left: 30%;
+	
+}
+.xian13 {
+	position: absolute;
+	bottom: 0;
+	left: 51.5%;
+}
+.xian14 {
+	position: absolute;
+	bottom: 17.8%;
+	left: 51%;
+	
+}
+.xian15 {
+	position: absolute;
+	bottom: 17.8%;
+	left: 68.8%;
+	
+}
+.xian16 {
+	position: absolute;
+	top: 20%;
+	left: 100%;
+	transform: rotateZ(202deg);
+	transform-origin: 0 0;
+}
+.xian17 {
+	position: absolute;
+	top: 10%;
+	right: 31.2%;
+}
+
+
+.xian18,
+.xian17,
+.xian16,
+.xian15,
+.xian14,
+.xian13,
+.xian12,
+.xian11,
+.xian10,
+.xian9,
+.xian8,
+.xian7,
+.xian6,
+.xian5,
+.xian4,
+.xian3,
+.xian2,
+.xian1 {
+	width: 1px;
+	height: 1px;
+	background-color: white;
+	z-index: 1;
+}
+/*7*/
+.zuobiao{
+	position: absolute;
+	top: 20%;
+	left: 2%;
+}
+#zuobiangan{
+	position: absolute;
+	top: 24.5%;
+	left: 4.7%;
+	width: 2px;
+	height: 75.5vh;
+	background-color: white;
+}
+.hb{
+	position: absolute;
+	top: 15%;
+	left: 10%;
+	width: 80vw;
+	height: 60vh;
+	transform-origin: 100% 100%;
+}
